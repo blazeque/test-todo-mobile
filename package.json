@@ -1,0 +1,14 @@
+{
+  "name": "teams-tasks-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "backend": "npm run db:migrate --workspace=backend && npm run dev --workspace=backend",
+    "mobile": "cd mobile && npm run start",
+    "test": "npm run test --workspace=backend && cd mobile && npm test",
+    "seed": "npm run seed --workspace=backend",
+    "setup": "npm install && npm install --prefix mobile && npm run db:prepare --workspace=backend && npm run seed --workspace=backend"
+  }
+}

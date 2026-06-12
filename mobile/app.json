@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Teams & Tasks",
+    "slug": "teams-tasks",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "teamstasks",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#1E293B"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1E293B"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}
